@@ -159,9 +159,10 @@ describe('Component: VisitTimelinePage', () => {
   });
 
   it('should check ionViewDidEnter logic', () => {
+    component.visit = {...VisitDataMock.VisitData};
     component.ionViewDidEnter();
     component.createNewTestReport();
-    expect(component.timeline.length > 0).toBeFalsy();
+    expect(component.timeline.length > 0).toBeTruthy();
 
   });
 
