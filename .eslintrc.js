@@ -4,8 +4,10 @@ module.exports = {
     "jest": true
   },
   "extends": [
-    "airbnb-base",
+    "airbnb-typescript/base",
     "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:security/recommended"
   ],
   "globals": {
@@ -15,7 +17,8 @@ module.exports = {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2016,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint",
