@@ -8,6 +8,7 @@
     "clean": "ionic-app-scripts clean",
     "build-default": "ionic-app-scripts build",
     "lint": "tslint -p ./src",
+    "eslint": "eslint --ext .ts ./src",
     "lint:fix": "tslint --fix -p ./",
     "security-checks": "git-secrets --scan && git log -p | scanrepo",
     "ionic:serve": "ionic-app-scripts serve --nobrowser",
@@ -95,6 +96,7 @@
   },
   "devDependencies": {
     "@angular/cli": "^7.1.0",
+    "@dvsa/eslint-config-ts": "^1.0.0",
     "@ionic/app-scripts": "^3.2.4",
     "@types/jasmine": "^2.5.41",
     "@typescript-eslint/eslint-plugin": "^2.24.0",

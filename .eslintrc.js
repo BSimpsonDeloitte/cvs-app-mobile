@@ -4,6 +4,7 @@ module.exports = {
     "jest": true
   },
   "extends": [
+    // "@dvsa/eslint-config-ts"
     "airbnb-typescript/base",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
